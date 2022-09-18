@@ -13,12 +13,32 @@
 
    <div class="page">
       <div class="container">
-         <div class="screen"></div>
+         <input class="screen" id="screen">
          <div class="keys">
-            <div class="up-keys"></div>
+            <div class="up-keys">
+               <button onclick="operator('+')" class="btn up">+</button>
+               <button onclick="operator('-')" class="btn up">-</button>
+               <button onclick="operator('*')" class="btn up">x</button>
+               <button onclick="operator('/')" class="btn up">/</button>
+            </div>
             <div class="down-keys">
-               <div class="num"></div>
-               <div class="equal-to"></div>
+               <div class="number">
+                  <button onclick="numClick(7)" class="btn down">7</button>
+                  <button onclick="numClick(8)" class="btn down">8</button>
+                  <button onclick="numClick(9)" class="btn down">9</button>
+                  <button onclick="numClick(4)" class="btn down">4</button>
+                  <button onclick="numClick(5)" class="btn down">5</button>
+                  <button onclick="numClick(6)" class="btn down">6</button>
+                  <button onclick="numClick(1)" class="btn down">1</button>
+                  <button onclick="numClick(2)" class="btn down">2</button>
+                  <button onclick="numClick(3)" class="btn down">3</button>
+                  <button onclick="numClick(0)" class="btn down">0</button>
+                  <button onclick="addDot()" class="btn down">.</button>
+                  <button onclick="clearDisplay()" class="btn down">AC</button>
+               </div>
+               <div class="equal-to">
+                  <button onclick="equalTo()" class="eql-btn">=</button>
+               </div>
             </div>
          </div>
       </div>
